@@ -1,5 +1,0 @@
-1:"$Sreact.fragment"
-2:I[4431,[],"OutletBoundary"]
-3:"$Sreact.suspense"
-0:{"buildId":"7lIwcmAv_iyYmX0ShuLhj","rsc":["$","$1","c",{"children":[["$","section",null,{"id":"mission","children":["$","article",null,{"children":[["$","h2",null,{"children":"Our Mission"}],["$","p",null,{"children":"The software world never stops changing — but not all change means progress. Our mission is to build technology that helps people evolve: through clarity, usability, and purpose."}],["$","p",null,{"children":"Innovation for us means simplicity and empowerment — not complexity. We focus on thoughtful design, purposeful engineering, and software that adapts to people, not the other way around."}]]}]}],null,["$","$L2",null,{"children":["$","$3",null,{"name":"Next.MetadataOutlet","children":"$@4"}]}]]}],"loading":null,"isPartial":false}
-4:null
