@@ -1,0 +1,16 @@
+(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[444],{2808:t=>{t.exports={postCard:"blog_postCard__Awnnp",tag:"blog_tag__Cvjry"}},4120:(t,e,a)=>{"use strict";a.r(e),a.d(e,{default:()=>b});var n=a(1209),r=a(6280),s=a.n(r);let i=null;async function l(){if(i)return;let t=await s()({locateFile:t=>"./sql-wasm.wasm"}),e=await fetch("./data/pampanet.sqlite"),a=await e.arrayBuffer();i=new t.Database(new Uint8Array(a))}async function o(t="en",e){i=e||i,e||i||await l();let a=i.prepare(`select entry.id as entry_id, entry.created_at as created_at, entry.modified_at as modified_at,
+            intl.blog_entry_id, intl.language as lang, intl.entry_title as title, intl.entry_body as body,
+            tags.tags_arr as tags
+            from blog_entry as entry
+            join blog_entry_i18n as intl
+              on entry_id = intl.blog_entry_id
+            join (
+              select
+                blog_entry_tag.tag_id, blog_entry_tag.blog_entry_id as blog_entry_id,
+                tag.id, group_concat(tag.value) as tags_arr
+              from blog_entry_tag
+              join tag on tag.id = blog_entry_tag.tag_id
+              group by blog_entry_id
+            ) as tags
+              on tags.blog_entry_id = entry_id
+            where intl.language == ?;`);a.bind([t]);let n=[];for(;a.step();)n.push(a.getAsObject());return a.free(),n}async function d(t,e="en"){return(await o(e)).filter(e=>t.some(t=>e.tags.includes(t)||e.title.includes(t)||e.body.includes(t)))}var _=a(5140),g=a(34),c=a(9997),y=a(2808),u=a.n(y),p=a(1457),h=a.n(p);function b(){let t=(0,g.useSearchParams)(),[e,a]=(0,c.useState)([]),[r,s]=(0,c.useState)(""),[i,l]=(0,c.useState)(null),y=(0,_.A)(),p=async t=>{let e=new URLSearchParams;t&&e.append("q",t),a(t?await d(t.split(" ,")):await o())};(0,c.useEffect)(()=>{(async()=>{let e=t.get("q");a(e?await d(e.split(" ,")):await o())})()},[]);let b=t=>{let e=t??"";l(e===i?null:e),s(""),p(t)};return(0,n.jsxs)("section",{children:[(0,n.jsx)("input",{type:"search",placeholder:"Search posts or tags...",value:r,onChange:t=>{var e;s(e=t.target.value),l(null),p(e)},style:{width:"100%",marginBottom:"1rem"}}),i&&(0,n.jsxs)("p",{children:["Filtering by tag:"," ",(0,n.jsxs)("mark",{onClick:()=>b(void 0),children:[i," ✕"]})]}),0===e.length?(0,n.jsx)("p",{children:"No posts found."}):e.map(t=>(0,n.jsxs)("article",{className:u().postCard,children:[(0,n.jsxs)("header",{children:[(0,n.jsx)(h(),{href:`/blog/${t.entry_id}`,children:(0,n.jsx)("h3",{children:t.title})}),(0,n.jsxs)("small",{children:["Created: ",new Date(t.created_at).toDateString(),t.modified_at&&` • Modified: ${new Date(t.modified_at).toDateString()}`]})]}),(0,n.jsx)("div",{dangerouslySetInnerHTML:{__html:y.render(t.body)}}),(0,n.jsx)("footer",{children:t.tags.split(",").map(t=>t.trim()).map(t=>(0,n.jsxs)("span",{className:u().tag,onClick:()=>b(t),children:["#",t]},t))})]},t.entry_id))]})}},8250:(t,e,a)=>{Promise.resolve().then(a.bind(a,4120))}},t=>{t.O(0,[912,457,208,58,892,358],()=>t(t.s=8250)),_N_E=t.O()}]);

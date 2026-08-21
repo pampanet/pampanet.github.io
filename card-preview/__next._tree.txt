@@ -1,0 +1,11 @@
+1:"$Sreact.fragment"
+2:I[8381,[],"ViewportBoundary"]
+4:I[8381,[],"MetadataBoundary"]
+5:"$Sreact.suspense"
+7:I[2376,[],"IconMark"]
+:HL["/_next/static/media/e4af272ccee01ff0-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/css/90077a9e64a0ae59.css","style"]
+:HL["https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css","style"]
+0:{"buildId":"DKn17KRjOv_6nyFq2XWDY","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"(product)","paramType":null,"paramKey":"(product)","hasRuntimePrefetch":false,"slots":{"children":{"name":"card-preview","paramType":null,"paramKey":"card-preview","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":false}},"isRootLayout":true}},"isRootLayout":false},"head":["$","$1","h",{"children":[null,["$","$L2",null,{"children":"$@3"}],["$","div",null,{"hidden":true,"children":["$","$L4",null,{"children":["$","$5",null,{"name":"Next.Metadata","children":"$@6"}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],"isHeadPartial":false,"staleTime":300}
+3:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+6:[["$","title","0",{"children":"Pampanet — Independent Development Studio"}],["$","meta","1",{"name":"description","content":"Official website of Pampanet, the independent studio by Pablo Biagioli, featuring apps, games, and creative technologies."}],["$","link","2",{"rel":"icon","href":"/favicon.ico?7aa1999b8d3f3cc0","type":"image/x-icon","sizes":"48x48"}],["$","$L7","3",{}]]
